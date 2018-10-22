@@ -63,7 +63,8 @@ int main(int argc, char *argv[]) {
 ```
 run为阻塞函数，如果想调用非阻塞函数，可以使用run.pull,run.pull_one.
 
-c++ rpcserver.cpp -orpcserver -std=gnu++11 -I./include -I./include/rpc/msgpack -DRPCLIB_MSGPACK=msgpack -lrpc -L./build/Debug/ 
+ 
+c++ rpcserver.cpp -orpcserver -std=gnu++11 -I/usr/local/include/ -I/usr/local/include/rpc/msgpack -DRPCLIB_MSGPACK=msgpack -lrpc
 
 ## Client
 
@@ -82,7 +83,8 @@ int main() {
 }
 ```
 
-c++ rpcclient.cpp -orpcclient -std=gnu++11 -I./include -I./include/rpc/msgpack -DRPCLIB_MSGPACK=msgpack -lrpc -L./build/Debug/ 
+ 
+c++ rpcclient.cpp -orpcclient -std=gnu++11 -I/usr/local/include/ -I/usr/local/include/rpc/msgpack -DRPCLIB_MSGPACK=msgpack -lrpc
 
 谁在使用EasyRPC
 
